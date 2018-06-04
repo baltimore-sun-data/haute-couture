@@ -38,7 +38,7 @@ func TestParsing(t *testing.T) {
 	for _, tc := range tcs {
 		t.Run(tc.name, func(t *testing.T) {
 			r := bytes.NewBufferString(tc.css)
-			classes, ids, err := ExtractClassesAndIds(r)
+			classes, ids, err := ExtractClassesAndIDs(r)
 			check(t, err)
 			if len(classes) != len(tc.classes) {
 				t.Fatalf("wrong number of classes: %d != %d",

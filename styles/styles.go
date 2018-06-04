@@ -8,7 +8,7 @@ import (
 	"github.com/tdewolff/parse/css"
 )
 
-func ExtractClassesAndIds(r io.Reader) (classes, ids map[string]bool, err error) {
+func ExtractClassesAndIDs(r io.Reader) (classes, ids map[string]bool, err error) {
 	p := css.NewParser(r, false)
 	classes = map[string]bool{}
 	ids = map[string]bool{}
