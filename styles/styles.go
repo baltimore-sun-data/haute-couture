@@ -23,7 +23,7 @@ func ExtractClassesAndIDs(r io.Reader) (classes, ids map[string]bool, err error)
 				err = fmt.Errorf("encountered error parsing CSS: %v", err)
 			}
 			return
-		} else if gt == css.BeginRulesetGrammar {
+		} else if gt == css.BeginRulesetGrammar || gt == css.QualifiedRuleGrammar {
 			captureClass := false
 			for _, val := range p.Values() {
 				data := string(val.Data)
