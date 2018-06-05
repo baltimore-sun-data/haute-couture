@@ -37,10 +37,12 @@ func FromArgs(args []string) Config {
 	fl.Var(&regexpFlag{conf.Exclude}, "exclude", "regexp for sub-directories to exclude")
 	fl.Usage = func() {
 		fmt.Fprintf(os.Stderr,
-			`haute-couture
+			`Haute couture looks through your CSS and static HTML to ensure that there are
+no out-of-date styles.
 
-Usage of haute-couture:
+Usage: haute-couture [options]
 
+Options:
 `,
 		)
 		fl.PrintDefaults()
