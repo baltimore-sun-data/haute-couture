@@ -33,3 +33,9 @@ Options:
   -output string
         file to save any found extra CSS identifiers in (default "extra-css.txt")
 ```
+
+## Endorsements
+
+> Well, the name is dynamite.
+
+— [Gregabit](https://www.reddit.com/r/golang/comments/8os2wp/haute_couture_looks_through_your_css_and_static/e068dxl/)
